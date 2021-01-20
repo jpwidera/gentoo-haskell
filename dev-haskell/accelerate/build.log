@@ -1,0 +1,275 @@
+[32;01m * [39;49;00mPackage:    dev-haskell/accelerate-1.3.0.0
+[32;01m * [39;49;00mRepository: haskell
+[32;01m * [39;49;00mMaintainer: <invalid metadata.xml>
+[32;01m * [39;49;00mUSE:        abi_x86_64 amd64 bounds-checks doc elibc_glibc hscolour kernel_linux test userland_GNU
+[32;01m * [39;49;00mFEATURES:   network-sandbox nostrip preserve-libs sandbox userpriv usersandbox
+>>> Unpacking source...
+>>> Unpacking accelerate-1.3.0.0.tar.gz to /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work
+>>> Source unpacked in /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work
+>>> Preparing source in /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0 ...
+>>> Source prepared.
+>>> Configuring source in /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0 ...
+ [32;01m*[0m Using cabal-3.2.1.0.
+ [32;01m*[0m Prepending /usr/lib64/ghc-8.10.3 to LD_LIBRARY_PATH
+/usr/bin/ghc -package Cabal-3.2.1.0 --make /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0/Setup.hs -j4 +RTS -A256M -qb0 -RTS -threaded -rtsopts -dynamic -o setup
+[1 of 1] Compiling Main             ( /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0/Setup.hs, /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0/Setup.o )
+Linking setup ...
+./setup configure --ghc --prefix=/usr --with-compiler=/usr/bin/ghc --with-hc-pkg=/usr/bin/ghc-pkg --prefix=/usr --libdir=/usr/lib64 --libsubdir=accelerate-1.3.0.0/ghc-8.10.3 --datadir=/usr/share/ --datasubdir=accelerate-1.3.0.0/ghc-8.10.3 --with-haddock=/usr/bin/haddock-ghc-8.10.3 --enable-tests --ghc-options=-j4 +RTS -A256M -qb0 -RTS --with-ar=x86_64-pc-linux-gnu-ar --ghc-option=-optc-O0 --ghc-option=-optc-pipe --ghc-option=-optc-march=native --ghc-option=-optl-Wl,-O1 --ghc-option=-optl-Wl,--as-needed --disable-executable-stripping --docdir=/usr/share/doc/accelerate-1.3.0.0 --verbose --enable-shared --enable-executable-dynamic --sysconfdir=/etc --disable-library-stripping --flags=bounds-checks --flags=-debug --flags=-ekg --flags=-internal-checks --flags=-nofib --flags=-unsafe-checks
+Using Parsec parser
+Configuring accelerate-1.3.0.0...
+Flags chosen: bounds-checks=True, debug=False, ekg=False,
+internal-checks=False, nofib=False, unsafe-checks=False
+Dependency ansi-terminal >=0.6.2: using ansi-terminal-0.10.3
+Dependency base >=4.12 && <4.15: using base-4.14.1.0
+Dependency base-orphans >=0.3: using base-orphans-0.8.4
+Dependency bytestring >=0.10.2: using bytestring-0.10.12.0
+Dependency containers >=0.3: using containers-0.6.2.1
+Dependency cryptonite >=0.21: using cryptonite-0.26
+Dependency deepseq >=1.3: using deepseq-1.4.4.0
+Dependency directory >=1.0: using directory-1.3.6.0
+Dependency exceptions >=0.6: using exceptions-0.10.4
+Dependency filepath >=1.0: using filepath-1.4.2.1
+Dependency ghc-prim -any: using ghc-prim-0.6.1
+Dependency half >=0.3: using half-0.3
+Dependency hashable >=1.1: using hashable-1.2.7.0
+Dependency hashtables >=1.2.3: using hashtables-1.2.4.1
+Dependency hedgehog >=0.5: using hedgehog-1.0.4
+Dependency lens >=4.0: using lens-4.19.2
+Dependency mtl >=2.0: using mtl-2.2.2
+Dependency prettyprinter >=1.2: using prettyprinter-1.7.0
+Dependency prettyprinter-ansi-terminal >=1.0: using
+prettyprinter-ansi-terminal-1.1.2
+Dependency primitive >=0.6.4: using primitive-0.7.1.0
+Dependency tasty >=0.11: using tasty-1.2.3
+Dependency template-haskell -any: using template-haskell-2.16.0.0
+Dependency terminal-size >=0.3: using terminal-size-0.3.2.1
+Dependency text >=1.2: using text-1.2.4.1
+Dependency transformers >=0.3: using transformers-0.5.6.2
+Dependency unique -any: using unique-0
+Dependency unix -any: using unix-2.7.2.2
+Dependency unordered-containers >=0.2: using unordered-containers-0.2.12.0
+Dependency vector >=0.10: using vector-0.12.1.2
+Dependency accelerate -any: using accelerate-1.3.0.0
+Dependency base >=4.10: using base-4.14.1.0
+Dependency doctest >=0.11: using doctest-0.16.3
+Source component graph:
+    component lib
+    component test:doctest dependency lib
+Configured component graph:
+    component accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        include ansi-terminal-0.10.3-Hpd3ONu7miU6c85cFR1uCj
+        include base-4.14.1.0
+        include base-orphans-0.8.4-JVJ8ttw51H7Dc3tJYgx6uK
+        include bytestring-0.10.12.0
+        include containers-0.6.2.1
+        include cryptonite-0.26-9hs1DwoFygI3SIqSVcDiuk
+        include deepseq-1.4.4.0
+        include directory-1.3.6.0
+        include exceptions-0.10.4
+        include filepath-1.4.2.1
+        include ghc-prim-0.6.1
+        include half-0.3-5I6Y1Z6OYBD6TOLu4NSPvX
+        include hashable-1.2.7.0-2jOsLReGC0X1KpiMhpDxgr
+        include hashtables-1.2.4.1-3KtVInIhfKi6JeI6Ny1cq4
+        include hedgehog-1.0.4-4mmwzRmj6qN47pkJXtuEV9
+        include lens-4.19.2-HPFgNWGkvd833zLT0OiTOv
+        include mtl-2.2.2
+        include prettyprinter-1.7.0-MyQaq6vEptLUwfImcZX6Q
+        include prettyprinter-ansi-terminal-1.1.2-FFkY6bsKjH1evDT2QJX3O
+        include primitive-0.7.1.0-Jxsyd70oUttYiCXCa0HqV
+        include tasty-1.2.3-47t7m0QU5yC4Y7Wppevf0A
+        include template-haskell-2.16.0.0
+        include terminal-size-0.3.2.1-HihNy0RThZk4O1UkYpAxTd
+        include text-1.2.4.1
+        include transformers-0.5.6.2
+        include unique-0-2iqzia6748z9k1G6Puwg8d
+        include unix-2.7.2.2
+        include unordered-containers-0.2.12.0-EcKsy1rt4uj3FRv5Y5qJCz
+        include vector-0.12.1.2-6jlbObSa8iuJfxUVGBQC5r
+    component accelerate-1.3.0.0-K3srn6inFDL2VjB4DucWQX-doctest
+        include accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        include base-4.14.1.0
+        include doctest-0.16.3-B8CaS0EpoSLtw0eIGUd0s
+Linked component graph:
+    unit accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        include ansi-terminal-0.10.3-Hpd3ONu7miU6c85cFR1uCj
+        include base-4.14.1.0
+        include base-orphans-0.8.4-JVJ8ttw51H7Dc3tJYgx6uK
+        include bytestring-0.10.12.0
+        include containers-0.6.2.1
+        include cryptonite-0.26-9hs1DwoFygI3SIqSVcDiuk
+        include deepseq-1.4.4.0
+        include directory-1.3.6.0
+        include exceptions-0.10.4
+        include filepath-1.4.2.1
+        include ghc-prim-0.6.1
+        include half-0.3-5I6Y1Z6OYBD6TOLu4NSPvX
+        include hashable-1.2.7.0-2jOsLReGC0X1KpiMhpDxgr
+        include hashtables-1.2.4.1-3KtVInIhfKi6JeI6Ny1cq4
+        include hedgehog-1.0.4-4mmwzRmj6qN47pkJXtuEV9
+        include lens-4.19.2-HPFgNWGkvd833zLT0OiTOv
+        include mtl-2.2.2
+        include prettyprinter-1.7.0-MyQaq6vEptLUwfImcZX6Q
+        include prettyprinter-ansi-terminal-1.1.2-FFkY6bsKjH1evDT2QJX3O
+        include primitive-0.7.1.0-Jxsyd70oUttYiCXCa0HqV
+        include tasty-1.2.3-47t7m0QU5yC4Y7Wppevf0A
+        include template-haskell-2.16.0.0
+        include terminal-size-0.3.2.1-HihNy0RThZk4O1UkYpAxTd
+        include text-1.2.4.1
+        include transformers-0.5.6.2
+        include unique-0-2iqzia6748z9k1G6Puwg8d
+        include unix-2.7.2.2
+        include unordered-containers-0.2.12.0-EcKsy1rt4uj3FRv5Y5qJCz
+        include vector-0.12.1.2-6jlbObSa8iuJfxUVGBQC5r
+        Data.Array.Accelerate=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate,Data.Array.Accelerate.AST=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.AST,Data.Array.Accelerate.AST.Environment=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.AST.Environment,Data.Array.Accelerate.AST.Idx=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.AST.Idx,Data.Array.Accelerate.AST.LeftHandSide=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.AST.LeftHandSide,Data.Array.Accelerate.AST.Var=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.AST.Var,Data.Array.Accelerate.Analysis.Hash=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Analysis.Hash,Data.Array.Accelerate.Analysis.Match=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Analysis.Match,Data.Array.Accelerate.Array.Data=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Data,Data.Array.Accelerate.Array.Remote=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Remote,Data.Array.Accelerate.Array.Remote.Class=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Remote.Class,Data.Array.Accelerate.Array.Remote.LRU=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Remote.LRU,Data.Array.Accelerate.Array.Remote.Table=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Remote.Table,Data.Array.Accelerate.Array.Unique=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Array.Unique,Data.Array.Accelerate.Async=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Async,Data.Array.Accelerate.Data.Bits=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Bits,Data.Array.Accelerate.Data.Complex=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Complex,Data.Array.Accelerate.Data.Either=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Either,Data.Array.Accelerate.Data.Fold=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Fold,Data.Array.Accelerate.Data.Functor=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Functor,Data.Array.Accelerate.Data.Maybe=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Maybe,Data.Array.Accelerate.Data.Monoid=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Monoid,Data.Array.Accelerate.Data.Ratio=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Ratio,Data.Array.Accelerate.Data.Semigroup=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Data.Semigroup,Data.Array.Accelerate.Debug=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Debug,Data.Array.Accelerate.Error=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Error,Data.Array.Accelerate.Interpreter=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Interpreter,Data.Array.Accelerate.Lifetime=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Lifetime,Data.Array.Accelerate.Pretty=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Pretty,Data.Array.Accelerate.Representation.Array=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Array,Data.Array.Accelerate.Representation.Elt=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Elt,Data.Array.Accelerate.Representation.Shape=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Shape,Data.Array.Accelerate.Representation.Slice=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Slice,Data.Array.Accelerate.Representation.Stencil=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Stencil,Data.Array.Accelerate.Representation.Tag=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Tag,Data.Array.Accelerate.Representation.Type=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Type,Data.Array.Accelerate.Representation.Vec=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Representation.Vec,Data.Array.Accelerate.Smart=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Smart,Data.Array.Accelerate.Sugar.Array=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Sugar.Array,Data.Array.Accelerate.Sugar.Elt=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Sugar.Elt,Data.Array.Accelerate.Sugar.Foreign=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Sugar.Foreign,Data.Array.Accelerate.Sugar.Shape=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Sugar.Shape,Data.Array.Accelerate.Sugar.Vec=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Sugar.Vec,Data.Array.Accelerate.Test.NoFib=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Test.NoFib,Data.Array.Accelerate.Test.Similar=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Test.Similar,Data.Array.Accelerate.Trafo=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo,Data.Array.Accelerate.Trafo.Config=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo.Config,Data.Array.Accelerate.Trafo.Delayed=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo.Delayed,Data.Array.Accelerate.Trafo.Fusion=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo.Fusion,Data.Array.Accelerate.Trafo.Sharing=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo.Sharing,Data.Array.Accelerate.Trafo.Substitution=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Trafo.Substitution,Data.Array.Accelerate.Type=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Type,Data.Array.Accelerate.Unsafe=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Array.Accelerate.Unsafe,Data.BitSet=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.BitSet,Data.Primitive.Vec=accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv:Data.Primitive.Vec
+    unit accelerate-1.3.0.0-K3srn6inFDL2VjB4DucWQX-doctest
+        include accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        include base-4.14.1.0
+        include doctest-0.16.3-B8CaS0EpoSLtw0eIGUd0s
+Ready component graph:
+    definite accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        depends ansi-terminal-0.10.3-Hpd3ONu7miU6c85cFR1uCj
+        depends base-4.14.1.0
+        depends base-orphans-0.8.4-JVJ8ttw51H7Dc3tJYgx6uK
+        depends bytestring-0.10.12.0
+        depends containers-0.6.2.1
+        depends cryptonite-0.26-9hs1DwoFygI3SIqSVcDiuk
+        depends deepseq-1.4.4.0
+        depends directory-1.3.6.0
+        depends exceptions-0.10.4
+        depends filepath-1.4.2.1
+        depends ghc-prim-0.6.1
+        depends half-0.3-5I6Y1Z6OYBD6TOLu4NSPvX
+        depends hashable-1.2.7.0-2jOsLReGC0X1KpiMhpDxgr
+        depends hashtables-1.2.4.1-3KtVInIhfKi6JeI6Ny1cq4
+        depends hedgehog-1.0.4-4mmwzRmj6qN47pkJXtuEV9
+        depends lens-4.19.2-HPFgNWGkvd833zLT0OiTOv
+        depends mtl-2.2.2
+        depends prettyprinter-1.7.0-MyQaq6vEptLUwfImcZX6Q
+        depends prettyprinter-ansi-terminal-1.1.2-FFkY6bsKjH1evDT2QJX3O
+        depends primitive-0.7.1.0-Jxsyd70oUttYiCXCa0HqV
+        depends tasty-1.2.3-47t7m0QU5yC4Y7Wppevf0A
+        depends template-haskell-2.16.0.0
+        depends terminal-size-0.3.2.1-HihNy0RThZk4O1UkYpAxTd
+        depends text-1.2.4.1
+        depends transformers-0.5.6.2
+        depends unique-0-2iqzia6748z9k1G6Puwg8d
+        depends unix-2.7.2.2
+        depends unordered-containers-0.2.12.0-EcKsy1rt4uj3FRv5Y5qJCz
+        depends vector-0.12.1.2-6jlbObSa8iuJfxUVGBQC5r
+    definite accelerate-1.3.0.0-K3srn6inFDL2VjB4DucWQX-doctest
+        depends accelerate-1.3.0.0-Aave5S4OdY59wJPyUo9hLv
+        depends base-4.14.1.0
+        depends doctest-0.16.3-B8CaS0EpoSLtw0eIGUd0s
+Using Cabal-3.2.1.0 compiled by ghc-8.10
+Using compiler: ghc-8.10.3
+Using install prefix: /usr
+Executables installed in: /usr/bin
+Libraries installed in: /usr/lib64/accelerate-1.3.0.0/ghc-8.10.3
+Dynamic Libraries installed in: /usr/lib64/x86_64-linux-ghc-8.10.3
+Private executables installed in:
+/usr/libexec/x86_64-linux-ghc-8.10.3/accelerate-1.3.0.0
+Data files installed in: /usr/share/accelerate-1.3.0.0/ghc-8.10.3
+Documentation installed in: /usr/share/doc/accelerate-1.3.0.0
+Configuration files installed in: /etc
+Using alex version 3.2.5 found on system at: /usr/bin/alex
+Using ar given by user at: /usr/bin/x86_64-pc-linux-gnu-ar
+Using c2hs version 0.28.7 found on system at: /usr/bin/c2hs
+No cpphs found
+Using doctest version 0.16.3 found on system at: /usr/bin/doctest
+Using gcc version 10.2.0 found on system at: /usr/bin/x86_64-pc-linux-gnu-gcc
+Using ghc version 8.10.3 given by user at: /usr/bin/ghc
+Using ghc-pkg version 8.10.3 given by user at: /usr/bin/ghc-pkg
+No ghcjs found
+No ghcjs-pkg found
+No greencard found
+Using haddock version 2.24.0 given by user at: /usr/bin/haddock-ghc-8.10.3
+Using happy version 1.20.0 found on system at: /usr/bin/happy
+Using haskell-suite found on system at: haskell-suite-dummy-location
+Using haskell-suite-pkg found on system at: haskell-suite-pkg-dummy-location
+No hmake found
+Using hpc version 0.68 found on system at: /usr/bin/hpc
+Using hsc2hs version 0.68.7 found on system at: /usr/bin/hsc2hs
+Using hscolour version 1.24 found on system at: /usr/bin/HsColour
+No jhc found
+Using ld found on system at: /usr/bin/x86_64-pc-linux-gnu-ld
+Using pkg-config version 1.6.3 found on system at: /usr/bin/pkg-config
+Using runghc version 8.10.3 found on system at: /usr/bin/runghc
+Using strip version 2.34 found on system at: /usr/bin/strip
+Using tar found on system at: /bin/tar
+No uhc found
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0 ...
+./setup build
+Preprocessing library for accelerate-1.3.0.0..
+Building library for accelerate-1.3.0.0..
+[  1 of 104] Compiling Data.Array.Accelerate.AST.Idx ( src/Data/Array/Accelerate/AST/Idx.hs, dist/build/Data/Array/Accelerate/AST/Idx.o, dist/build/Data/Array/Accelerate/AST/Idx.dyn_o )
+[  2 of 104] Compiling Data.Array.Accelerate.Analysis.Hash.TH ( src/Data/Array/Accelerate/Analysis/Hash/TH.hs, dist/build/Data/Array/Accelerate/Analysis/Hash/TH.o, dist/build/Data/Array/Accelerate/Analysis/Hash/TH.dyn_o )
+[  3 of 104] Compiling Data.Array.Accelerate.Async ( src/Data/Array/Accelerate/Async.hs, dist/build/Data/Array/Accelerate/Async.o, dist/build/Data/Array/Accelerate/Async.dyn_o )
+[  4 of 104] Compiling Data.Array.Accelerate.Debug.Clock ( src/Data/Array/Accelerate/Debug/Clock.hs, dist/build/Data/Array/Accelerate/Debug/Clock.o, dist/build/Data/Array/Accelerate/Debug/Clock.dyn_o )
+[  5 of 104] Compiling Data.Array.Accelerate.Debug.Flags ( src/Data/Array/Accelerate/Debug/Flags.hs, dist/build/Data/Array/Accelerate/Debug/Flags.o, dist/build/Data/Array/Accelerate/Debug/Flags.dyn_o )
+[  6 of 104] Compiling Data.Array.Accelerate.Debug.Trace ( src/Data/Array/Accelerate/Debug/Trace.hs, dist/build/Data/Array/Accelerate/Debug/Trace.o, dist/build/Data/Array/Accelerate/Debug/Trace.dyn_o )
+[  7 of 104] Compiling Data.Array.Accelerate.Debug.Timed ( src/Data/Array/Accelerate/Debug/Timed.hs, dist/build/Data/Array/Accelerate/Debug/Timed.o, dist/build/Data/Array/Accelerate/Debug/Timed.dyn_o )
+[  8 of 104] Compiling Data.Array.Accelerate.Debug.Stats ( src/Data/Array/Accelerate/Debug/Stats.hs, dist/build/Data/Array/Accelerate/Debug/Stats.o, dist/build/Data/Array/Accelerate/Debug/Stats.dyn_o )
+[  9 of 104] Compiling Data.Array.Accelerate.Error ( src/Data/Array/Accelerate/Error.hs, dist/build/Data/Array/Accelerate/Error.o, dist/build/Data/Array/Accelerate/Error.dyn_o )
+[ 10 of 104] Compiling Data.Array.Accelerate.Lifetime ( src/Data/Array/Accelerate/Lifetime.hs, dist/build/Data/Array/Accelerate/Lifetime.o, dist/build/Data/Array/Accelerate/Lifetime.dyn_o )
+[ 11 of 104] Compiling Data.Array.Accelerate.Array.Unique ( src/Data/Array/Accelerate/Array/Unique.hs, dist/build/Data/Array/Accelerate/Array/Unique.o, dist/build/Data/Array/Accelerate/Array/Unique.dyn_o )
+[ 12 of 104] Compiling Data.Array.Accelerate.Orphans ( src/Data/Array/Accelerate/Orphans.hs, dist/build/Data/Array/Accelerate/Orphans.o, dist/build/Data/Array/Accelerate/Orphans.dyn_o )
+[ 13 of 104] Compiling Data.Array.Accelerate.Sugar.Foreign ( src/Data/Array/Accelerate/Sugar/Foreign.hs, dist/build/Data/Array/Accelerate/Sugar/Foreign.o, dist/build/Data/Array/Accelerate/Sugar/Foreign.dyn_o )
+[ 14 of 104] Compiling Data.Array.Accelerate.Test.NoFib.Config ( src/Data/Array/Accelerate/Test/NoFib/Config.hs, dist/build/Data/Array/Accelerate/Test/NoFib/Config.o, dist/build/Data/Array/Accelerate/Test/NoFib/Config.dyn_o )
+[ 15 of 104] Compiling Data.Atomic      ( src/Data/Atomic.hs, dist/build/Data/Atomic.o, dist/build/Data/Atomic.dyn_o )
+[ 16 of 104] Compiling Data.Array.Accelerate.Debug.Monitoring ( src/Data/Array/Accelerate/Debug/Monitoring.hs, dist/build/Data/Array/Accelerate/Debug/Monitoring.o, dist/build/Data/Array/Accelerate/Debug/Monitoring.dyn_o )
+[ 17 of 104] Compiling Data.BitSet      ( src/Data/BitSet.hs, dist/build/Data/BitSet.o, dist/build/Data/BitSet.dyn_o )
+[ 18 of 104] Compiling Data.Array.Accelerate.Trafo.Config ( src/Data/Array/Accelerate/Trafo/Config.hs, dist/build/Data/Array/Accelerate/Trafo/Config.o, dist/build/Data/Array/Accelerate/Trafo/Config.dyn_o )
+[ 19 of 104] Compiling Data.Primitive.Vec ( src/Data/Primitive/Vec.hs, dist/build/Data/Primitive/Vec.o, dist/build/Data/Primitive/Vec.dyn_o )
+[ 20 of 104] Compiling Data.Array.Accelerate.Type ( src/Data/Array/Accelerate/Type.hs, dist/build/Data/Array/Accelerate/Type.o, dist/build/Data/Array/Accelerate/Type.dyn_o )
+[ 21 of 104] Compiling Data.Array.Accelerate.Representation.Tag ( src/Data/Array/Accelerate/Representation/Tag.hs, dist/build/Data/Array/Accelerate/Representation/Tag.o, dist/build/Data/Array/Accelerate/Representation/Tag.dyn_o )
+[ 22 of 104] Compiling Data.Array.Accelerate.Classes.RealFrac[boot] ( src/Data/Array/Accelerate/Classes/RealFrac.hs-boot, dist/build/Data/Array/Accelerate/Classes/RealFrac.o-boot, dist/build/Data/Array/Accelerate/Classes/RealFrac.dyn_o )
+[ 23 of 104] Compiling Data.Array.Accelerate.Representation.Type ( src/Data/Array/Accelerate/Representation/Type.hs, dist/build/Data/Array/Accelerate/Representation/Type.o, dist/build/Data/Array/Accelerate/Representation/Type.dyn_o )
+[ 24 of 104] Compiling Data.Array.Accelerate.Representation.Vec ( src/Data/Array/Accelerate/Representation/Vec.hs, dist/build/Data/Array/Accelerate/Representation/Vec.o, dist/build/Data/Array/Accelerate/Representation/Vec.dyn_o )
+[ 25 of 104] Compiling Data.Array.Accelerate.Representation.Shape ( src/Data/Array/Accelerate/Representation/Shape.hs, dist/build/Data/Array/Accelerate/Representation/Shape.o, dist/build/Data/Array/Accelerate/Representation/Shape.dyn_o )
+[ 26 of 104] Compiling Data.Array.Accelerate.Representation.Slice ( src/Data/Array/Accelerate/Representation/Slice.hs, dist/build/Data/Array/Accelerate/Representation/Slice.o, dist/build/Data/Array/Accelerate/Representation/Slice.dyn_o )
+[ 27 of 104] Compiling Data.Array.Accelerate.AST.Var ( src/Data/Array/Accelerate/AST/Var.hs, dist/build/Data/Array/Accelerate/AST/Var.o, dist/build/Data/Array/Accelerate/AST/Var.dyn_o )
+[ 28 of 104] Compiling Data.Array.Accelerate.AST.LeftHandSide ( src/Data/Array/Accelerate/AST/LeftHandSide.hs, dist/build/Data/Array/Accelerate/AST/LeftHandSide.o, dist/build/Data/Array/Accelerate/AST/LeftHandSide.dyn_o )
+[ 29 of 104] Compiling Data.Array.Accelerate.AST.Environment ( src/Data/Array/Accelerate/AST/Environment.hs, dist/build/Data/Array/Accelerate/AST/Environment.o, dist/build/Data/Array/Accelerate/AST/Environment.dyn_o )
+[ 30 of 104] Compiling Data.Array.Accelerate.Representation.Elt ( src/Data/Array/Accelerate/Representation/Elt.hs, dist/build/Data/Array/Accelerate/Representation/Elt.o, dist/build/Data/Array/Accelerate/Representation/Elt.dyn_o )
+[ 31 of 104] Compiling Data.Array.Accelerate.Array.Data ( src/Data/Array/Accelerate/Array/Data.hs, dist/build/Data/Array/Accelerate/Array/Data.o, dist/build/Data/Array/Accelerate/Array/Data.dyn_o )
+[ 32 of 104] Compiling Data.Array.Accelerate.Representation.Array ( src/Data/Array/Accelerate/Representation/Array.hs, dist/build/Data/Array/Accelerate/Representation/Array.o, dist/build/Data/Array/Accelerate/Representation/Array.dyn_o )
+[ 33 of 104] Compiling Data.Array.Accelerate.Representation.Stencil ( src/Data/Array/Accelerate/Representation/Stencil.hs, dist/build/Data/Array/Accelerate/Representation/Stencil.o, dist/build/Data/Array/Accelerate/Representation/Stencil.dyn_o )
+[ 34 of 104] Compiling Data.Array.Accelerate.Array.Remote.Class ( src/Data/Array/Accelerate/Array/Remote/Class.hs, dist/build/Data/Array/Accelerate/Array/Remote/Class.o, dist/build/Data/Array/Accelerate/Array/Remote/Class.dyn_o )
+[ 35 of 104] Compiling Data.Array.Accelerate.AST ( src/Data/Array/Accelerate/AST.hs, dist/build/Data/Array/Accelerate/AST.o, dist/build/Data/Array/Accelerate/AST.dyn_o )
+[ 36 of 104] Compiling Data.Array.Accelerate.Trafo.Var ( src/Data/Array/Accelerate/Trafo/Var.hs, dist/build/Data/Array/Accelerate/Trafo/Var.o, dist/build/Data/Array/Accelerate/Trafo/Var.dyn_o )
+[ 37 of 104] Compiling Data.Array.Accelerate.Pretty.Print ( src/Data/Array/Accelerate/Pretty/Print.hs, dist/build/Data/Array/Accelerate/Pretty/Print.o, dist/build/Data/Array/Accelerate/Pretty/Print.dyn_o )
+[ 38 of 104] Compiling Data.Array.Accelerate.Pretty.Graphviz.Type ( src/Data/Array/Accelerate/Pretty/Graphviz/Type.hs, dist/build/Data/Array/Accelerate/Pretty/Graphviz/Type.o, dist/build/Data/Array/Accelerate/Pretty/Graphviz/Type.dyn_o )
+[ 39 of 104] Compiling Data.Array.Accelerate.Pretty.Graphviz.Monad ( src/Data/Array/Accelerate/Pretty/Graphviz/Monad.hs, dist/build/Data/Array/Accelerate/Pretty/Graphviz/Monad.o, dist/build/Data/Array/Accelerate/Pretty/Graphviz/Monad.dyn_o )
+[ 40 of 104] Compiling Data.Array.Accelerate.Analysis.Hash ( src/Data/Array/Accelerate/Analysis/Hash.hs, dist/build/Data/Array/Accelerate/Analysis/Hash.o, dist/build/Data/Array/Accelerate/Analysis/Hash.dyn_o )
+[ 41 of 104] Compiling Language.Haskell.TH.Extra ( src/Language/Haskell/TH/Extra.hs, dist/build/Language/Haskell/TH/Extra.o, dist/build/Language/Haskell/TH/Extra.dyn_o )
+[ 42 of 104] Compiling Data.Array.Accelerate.Sugar.Elt ( src/Data/Array/Accelerate/Sugar/Elt.hs, dist/build/Data/Array/Accelerate/Sugar/Elt.o, dist/build/Data/Array/Accelerate/Sugar/Elt.dyn_o )
+[ 43 of 104] Compiling Data.Array.Accelerate.Sugar.Vec ( src/Data/Array/Accelerate/Sugar/Vec.hs, dist/build/Data/Array/Accelerate/Sugar/Vec.o, dist/build/Data/Array/Accelerate/Sugar/Vec.dyn_o )
+[ 44 of 104] Compiling Data.Array.Accelerate.Sugar.Shape ( src/Data/Array/Accelerate/Sugar/Shape.hs, dist/build/Data/Array/Accelerate/Sugar/Shape.o, dist/build/Data/Array/Accelerate/Sugar/Shape.dyn_o )
+[ 45 of 104] Compiling Data.Array.Accelerate.Analysis.Match ( src/Data/Array/Accelerate/Analysis/Match.hs, dist/build/Data/Array/Accelerate/Analysis/Match.o, dist/build/Data/Array/Accelerate/Analysis/Match.dyn_o )
+[ 46 of 104] Compiling Data.Array.Accelerate.Trafo.Substitution ( src/Data/Array/Accelerate/Trafo/Substitution.hs, dist/build/Data/Array/Accelerate/Trafo/Substitution.o, dist/build/Data/Array/Accelerate/Trafo/Substitution.dyn_o )
+[ 47 of 104] Compiling Data.Array.Accelerate.Trafo.LetSplit ( src/Data/Array/Accelerate/Trafo/LetSplit.hs, dist/build/Data/Array/Accelerate/Trafo/LetSplit.o, dist/build/Data/Array/Accelerate/Trafo/LetSplit.dyn_o )
+[ 48 of 104] Compiling Data.Array.Accelerate.Trafo.Environment ( src/Data/Array/Accelerate/Trafo/Environment.hs, dist/build/Data/Array/Accelerate/Trafo/Environment.o, dist/build/Data/Array/Accelerate/Trafo/Environment.dyn_o )
+[ 49 of 104] Compiling Data.Array.Accelerate.Trafo.Shrink ( src/Data/Array/Accelerate/Trafo/Shrink.hs, dist/build/Data/Array/Accelerate/Trafo/Shrink.o, dist/build/Data/Array/Accelerate/Trafo/Shrink.dyn_o )
+[ 50 of 104] Compiling Data.Array.Accelerate.Trafo.Delayed ( src/Data/Array/Accelerate/Trafo/Delayed.hs, dist/build/Data/Array/Accelerate/Trafo/Delayed.o, dist/build/Data/Array/Accelerate/Trafo/Delayed.dyn_o )
+[ 51 of 104] Compiling Data.Array.Accelerate.Trafo.Algebra ( src/Data/Array/Accelerate/Trafo/Algebra.hs, dist/build/Data/Array/Accelerate/Trafo/Algebra.o, dist/build/Data/Array/Accelerate/Trafo/Algebra.dyn_o )
+/var/tmp/portage/dev-haskell/accelerate-1.3.0.0/temp/environment: line 489:    38 Segmentation fault      ./setup "$@"
+ [31;01m*[0m ERROR: dev-haskell/accelerate-1.3.0.0::haskell failed (compile phase):
+ [31;01m*[0m   setup build failed
+ [31;01m*[0m 
+ [31;01m*[0m Call stack:
+ [31;01m*[0m     ebuild.sh, line  125:  Called src_compile
+ [31;01m*[0m   environment, line 1956:  Called haskell-cabal_src_compile
+ [31;01m*[0m   environment, line 1550:  Called cabal_src_compile
+ [31;01m*[0m   environment, line  716:  Called cabal-build
+ [31;01m*[0m   environment, line  492:  Called die
+ [31;01m*[0m The specific snippet of code:
+ [31;01m*[0m       ./setup "$@" || die "setup build failed"
+ [31;01m*[0m 
+ [31;01m*[0m If you need support, post the output of `emerge --info '=dev-haskell/accelerate-1.3.0.0::haskell'`,
+ [31;01m*[0m the complete build log and the output of `emerge -pqv '=dev-haskell/accelerate-1.3.0.0::haskell'`.
+ [31;01m*[0m The complete build log is located at '/var/tmp/portage/dev-haskell/accelerate-1.3.0.0/temp/build.log'.
+ [31;01m*[0m The ebuild environment file is located at '/var/tmp/portage/dev-haskell/accelerate-1.3.0.0/temp/environment'.
+ [31;01m*[0m Working directory: '/var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0'
+ [31;01m*[0m S: '/var/tmp/portage/dev-haskell/accelerate-1.3.0.0/work/accelerate-1.3.0.0'
