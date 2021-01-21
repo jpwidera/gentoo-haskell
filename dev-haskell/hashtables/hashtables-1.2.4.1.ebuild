@@ -33,6 +33,10 @@ DEPEND="${RDEPEND}
 		>=dev-haskell/test-framework-quickcheck2-0.2.6 <dev-haskell/test-framework-quickcheck2-0.4 )
 "
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-1.2.4.1-sse42.patch
+)
+
 src_configure() {
 	haskell-cabal_src_configure \
 		$(cabal_flag bounds-checking bounds-checking) \
